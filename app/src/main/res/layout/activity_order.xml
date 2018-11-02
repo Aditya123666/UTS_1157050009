@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_activity"
+        >
+        <EditText
+            android:id="@+id/etnama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NAMA"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/etalamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/etnohp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No Hp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioGroup
+                android:id="@+id/rgbahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:id="@+id/rbarabica"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ARABICA"
+                    android:onClick="rbclick"
+                    android:gravity="center"
+                    android:shadowColor="@color/colorAccent"
+                    />
+                <RadioButton
+                    android:id="@+id/rbrobusta"
+                    android:layout_weight="1"
+                    android:onClick="rbclick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/colorAccent"
+                    android:text="ROBUSTA"
+                    android:gravity="center"
+                    />
+            </RadioGroup>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ListView
+                android:id="@+id/list"
+                android:layout_height="60dp"
+                android:layout_width="match_parent"
+
+                >
+            </ListView>
+            <!--<Spinner-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:id="@+id/spinnerjenis"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:backgroundTint="#2ecc71"-->
+                <!--android:entries="@array/dropdown_jenis"-->
+                <!--android:padding="5dp"-->
+
+                <!--/>-->
+
+            <Spinner
+                android:layout_marginTop="@dimen/margin_activity"
+                android:id="@+id/spinnerproses"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2ecc71"
+                android:entries="@array/dropdown_processing"
+                android:padding="5dp" />
+
+            <Spinner
+                android:layout_marginTop="@dimen/margin_activity"
+                android:id="@+id/spinnerberat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2ecc71"
+                android:entries="@array/dropdown_berat"
+                android:padding="5dp" />
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+    
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_activity"
+        >
+        <Button
+            android:id="@+id/btncekharga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cek Harga"
+            android:textSize="20sp"
+            />
+        <TextView
+
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvtotalharga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="TOTAL HARGA"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ORDER"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

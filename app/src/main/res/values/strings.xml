@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Kopi Gunung Tilu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="profil">Profile</string>
+    <string name="language">Change Language</string>
+    <string name="detail_harga_kopi">Detail Harga Kopi</string>
+    <string name="detail_profil_mahasiswa">Profil Mahasiswa</string>
+
+
+    <string-array name="dropdown_jenis">
+        <item>Pilih Jenis</item>
+        <item>Green Bean</item>
+        <item>Roasted Bean</item>
+        <item>Ground</item>
+
+    </string-array>
+    <string-array name="dropdown_processing">
+        <item>Pilih Proses</item>
+        <item>Natural</item>
+        <item>Honey</item>
+        <item>Dry</item>
+        <item>Wet</item>
+    </string-array>
+    <string-array name="dropdown_berat">
+        <item>Pilih berat</item>
+        <item>100gram</item>
+        <item>250gram</item>
+        <item>500gram</item>
+        <item>1000gram</item>
+    </string-array>
+
+</resources>
